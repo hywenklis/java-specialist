@@ -24,9 +24,9 @@ public class DataInput {
 
         System.out.println("----------------------------------");
 
-        System.out.printf("%nFolha de pagamento: %s%n", name);
-        System.out.printf("%d horas x R$%.2f = R$%.2f%n", workedHours, valueHour, valueTotalWorked);
-        System.out.printf("Descontos: R$%.2f%n", valueDiscounts);
-        System.out.printf("Total devido: R$%.2f%n", valueTotalDue);
+        System.out.printf("%nPayroll: %s%n", name);
+        System.out.printf("%d hours x R$%.2f = R$%.2f%n", workedHours, valueHour, valueTotalWorked);
+        System.out.printf("Discounts: R$%.2f%n", valueDiscounts);
+        System.out.printf("Total due: R$%.2f%n", valueTotalDue);
     }
 }
