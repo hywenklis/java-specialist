@@ -1,3 +1,5 @@
+package fundamentalsoflanguage;
+
 public class VariablesArithmeticOperators {
     private static final double SALES_QUANTITIES = 3;
 
