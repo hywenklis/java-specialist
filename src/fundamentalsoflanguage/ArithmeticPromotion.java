@@ -2,14 +2,14 @@ package fundamentalsoflanguage;
 
 public class ArithmeticPromotion {
 
-    private static final float AGE_QUANTITIES = 3f;
+    private static final float NUMBER_OF_PERSONS = 3f;
 
     public static void main(String[] args) {
-        int age1 = 30;
-        int age2 = 40;
-        int age3 = 60;
+        final int agePerson1 = 30;
+        final int agePerson2 = 40;
+        final int agePerson3 = 60;
 
-        float ageAverage = (age1 + age2 + age3) / AGE_QUANTITIES;
+        final float ageAverage = (agePerson1 + agePerson2 + agePerson3) / NUMBER_OF_PERSONS;
 
         System.out.println("Age average: " + ageAverage);
     }

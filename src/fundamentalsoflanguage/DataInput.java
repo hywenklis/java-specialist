@@ -10,23 +10,24 @@ public class DataInput {
         System.out.println("Name: ");
         String name = scanner.nextLine();
 
-        System.out.println("Value per hour: ");
-        double valueHour = scanner.nextDouble();
+        System.out.println("Hourly rate: ");
+        double hourlyRate = scanner.nextDouble();
 
-        System.out.println("Worked hours: ");
-        int workedHours = scanner.nextInt();
+        System.out.println("Hours worked: ");
+        int hoursWorked = scanner.nextInt();
 
-        System.out.println("Value of discounts: ");
-        double valueDiscounts = scanner.nextDouble();
+        System.out.println("Discount amount: ");
+        double discountAmount = scanner.nextDouble();
 
-        double valueTotalWorked = valueHour * workedHours;
-        double valueTotalDue = valueTotalWorked - valueDiscounts;
+        double totalWages = hourlyRate * hoursWorked;
+        double totalDue = totalWages - discountAmount;
 
         System.out.println("----------------------------------");
 
         System.out.printf("%nPayroll: %s%n", name);
-        System.out.printf("%d hours x R$%.2f = R$%.2f%n", workedHours, valueHour, valueTotalWorked);
-        System.out.printf("Discounts: R$%.2f%n", valueDiscounts);
-        System.out.printf("Total due: R$%.2f%n", valueTotalDue);
+        System.out.printf("%d hours x $%.2f = $%.2f%n", hoursWorked, hourlyRate, totalWages);
+        System.out.printf("Discounts: $%.2f%n", discountAmount);
+        System.out.printf("Total due: $%.2f%n", totalDue);
     }
 }
+

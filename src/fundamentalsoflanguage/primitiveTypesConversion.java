@@ -3,11 +3,11 @@ package fundamentalsoflanguage;
 public class primitiveTypesConversion {
 
     public static void main(String[] args) {
-        final double weightCharge1 = 1033.49;
-        final double weightCharge2 = 849.88;
+        final double weightOfLoad1 = 1033.49;
+        final double weightOfLoad2 = 849.88;
 
-        int weightTotalCharge = (int) (weightCharge1 + weightCharge2);
+        int totalWeightOfLoads = (int) (weightOfLoad1 + weightOfLoad2);
 
-        System.out.println("Total weight of loads " + weightTotalCharge);
+        System.out.println("Total weight of loads " + totalWeightOfLoads);
     }
 }
