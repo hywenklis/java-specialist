@@ -1,8 +1,18 @@
 package fundamentalsoflanguage;
 
+/**
+ * Calculates the average sales of a group of products.
+ */
 public class VariablesArithmeticOperators {
+
+    /** The number of products sold. */
     private static final double NUMBER_OF_PRODUCTS_SOLD = 3;
 
+    /**
+     * Calculates the average sales of a group of products.
+     *
+     * @param args command-line arguments (unused)
+     */
     public static void main(String[] args) {
         final double saleProduct1 = 20;
         final double saleProduct2 = 30;

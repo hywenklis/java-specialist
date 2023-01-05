@@ -2,8 +2,16 @@ package fundamentalsoflanguage;
 
 import java.util.Scanner;
 
+/**
+ * Calculates the payroll for an employee based on their hourly rate, hours worked, and discounts.
+ */
 public class DataInput {
 
+    /**
+     * Calculates the payroll for an employee based on their hourly rate, hours worked, and discounts.
+     *
+     * @param args command-line arguments (unused)
+     */
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
