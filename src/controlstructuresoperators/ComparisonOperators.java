@@ -1,7 +1,7 @@
 package controlstructuresoperators;
 
 public class ComparisonOperators {
-    
+
     public static void main(String[] args) {
         final int weightOfProducts = 900;
         final int truckWeightLimit = 1000;
