@@ -14,7 +14,7 @@ public class CortisolExam {
         System.out.printf("Cortisol normal: %b%n", isCortisolNormal);
 
         final boolean isCortisolAbnormal = cortisol < 6.0 || cortisol > 18.4;
-        System.out.printf("Cortisol abnormal: %b%n", isCortisolAbnormal);
+        System.out.printf("Cortisol anormal: %b%n", isCortisolAbnormal);
     }
 
 }

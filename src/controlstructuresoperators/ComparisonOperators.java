@@ -7,10 +7,10 @@ public class ComparisonOperators {
         final int truckWeightLimit = 1000;
 
         final boolean isLoadExceeded = weightOfProducts > truckWeightLimit;
-        System.out.printf("Load exceeded: %b%n", isLoadExceeded);
+        System.out.printf("Carga excedida: %b%n", isLoadExceeded);
 
         final boolean isLoadAllowed = truckWeightLimit >= weightOfProducts;
-        System.out.printf("Load allowed: %b%n", isLoadAllowed);
+        System.out.printf("Carga permitida: %b%n", isLoadAllowed);
     }
 
 }

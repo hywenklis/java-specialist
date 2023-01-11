@@ -2,29 +2,21 @@ package fundamentalsoflanguage;
 
 import java.util.Scanner;
 
-/**
- * Calculates the payroll for an employee based on their hourly rate, hours worked, and discounts.
- */
 public class DataInput {
 
-    /**
-     * Calculates the payroll for an employee based on their hourly rate, hours worked, and discounts.
-     *
-     * @param args command-line arguments (unused)
-     */
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println("Name: ");
+        System.out.println("Nome: ");
         String name = scanner.nextLine();
 
-        System.out.println("Hourly rate: ");
+        System.out.println("Taxa horária: ");
         double hourlyRate = scanner.nextDouble();
 
-        System.out.println("Hours worked: ");
+        System.out.println("Horas trabalhadas: ");
         int hoursWorked = scanner.nextInt();
 
-        System.out.println("Discount amount: ");
+        System.out.println("Valor do desconto: ");
         double discountAmount = scanner.nextDouble();
 
         double totalWages = hourlyRate * hoursWorked;
@@ -32,10 +24,10 @@ public class DataInput {
 
         System.out.println("----------------------------------");
 
-        System.out.printf("%nPayroll: %s%n", name);
-        System.out.printf("%d hours x $%.2f = $%.2f%n", hoursWorked, hourlyRate, totalWages);
-        System.out.printf("Discounts: $%.2f%n", discountAmount);
-        System.out.printf("Total due: $%.2f%n", totalDue);
+        System.out.printf("%nFolha de pagamento: %s%n", name);
+        System.out.printf("%d Horas x $%.2f = $%.2f%n", hoursWorked, hourlyRate, totalWages);
+        System.out.printf("Discontos: $%.2f%n", discountAmount);
+        System.out.printf("Total devido: $%.2f%n", totalDue);
     }
 }
 

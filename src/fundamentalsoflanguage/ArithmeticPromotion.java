@@ -11,6 +11,6 @@ public class ArithmeticPromotion {
 
         final float ageAverage = (agePerson1 + agePerson2 + agePerson3) / NUMBER_OF_PERSONS;
 
-        System.out.println("Age average: " + ageAverage);
+        System.out.println("Idade média: " + ageAverage);
     }
 }

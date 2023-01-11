@@ -8,14 +8,14 @@ public class EqualityOperatorsNegation {
         final boolean areNumbersEqual = firstNumber == secondNumber;
         final boolean areNumbersDifferent = firstNumber != secondNumber;
 
-        System.out.printf("Numbers are equal: %b%n", areNumbersEqual);
-        System.out.printf("Numbers are different: %b%n", areNumbersDifferent);
+        System.out.printf("Números são iguais: %b%n", areNumbersEqual);
+        System.out.printf("Os números são diferentes: %b%n", areNumbersDifferent);
 
         String firstName = "Thiago";
         String secondName = "Miguel";
         boolean areNamesEqual = firstName == secondName;
 
-        System.out.printf("Names are equal: %b%n", areNamesEqual);
+        System.out.printf("os nomes são iguais: %b%n", areNamesEqual);
     }
 
 }
