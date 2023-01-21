@@ -25,7 +25,7 @@ public class CalculatorIndexBodyMass {
         Scanner scanner = new Scanner(System.in);
 
         System.out.println("Sexo: [F / M]");
-        String sex = scanner.next();
+        String sex = scanner.next().toUpperCase();
 
         System.out.print("Peso: ");
         int weight = scanner.nextInt();
