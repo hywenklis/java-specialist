@@ -3,23 +3,29 @@ package fundamentalsoflanguage;
 import java.util.Scanner;
 
 public class CalculatorIndexBodyMass {
-    private static final double MIN_WEIGHT = 18.5;
-    private static final double MAX_WEIGHT = 25;
-    private static final double OVERWEIGHT_MIN = 25;
-    private static final double OVERWEIGHT_MAX = 30;
-    private static final double GRADE_I_OBESITY_MIN = 30;
-    private static final double GRADE_I_OBESITY_MAX = 35;
-    private static final double GRADE_II_OBESITY_MIN = 35;
-    private static final double GRADE_II_OBESITY_MAX = 40;
-    private static final String MIN_WEIGHT_CATEGORY = "Abaixo do peso ideal.";
-    private static final String MAX_WEIGHT_CATEGORY = "Peso ideal.";
-    private static final String OVERWEIGHT_CATEGORY = "Acima do peso.";
-    private static final String GRADE_I_OBESITY_CATEGORY = "Obesidade grau I.";
-    private static final String GRADE_II_OBESITY_CATEGORY = "Obesidade grau II.";
-    private static final String GRADE_III_OBESITY_CATEGORY = "Obesidade grau III.";
+    private static final double UNDER_WEIGHT_M = 20.7;
+    private static final double UNDER_WEIGHT_F = 19.1;
+    private static final double IDEAL_WEIGHT_M = 26.4;
+    private static final double IDEAL_WEIGHT_F = 25.8;
+    private static final double LITTLE_OVERWEIGHT_M = 27.8;
+    private static final double LITTLE_OVERWEIGHT_F = 27.3;
+    private static final double ABOVE_IDEAL_WEIGHT_M = 31.1;
+    private static final double ABOVE_IDEAL_WEIGHT_F = 32.3;
+
+    private static final String UNDER_WEIGHT_CATEGORY = "Abaixo do peso.";
+    private static final String IDEAL_WEIGHT_CATEGORY = "No peso ideal.";
+    private static final String LITTLE_OVERWEIGHT_CATEGORY = "Um pouco acima do peso ideal.";
+    private static final String ABOVE_IDEAL_WEIGHT_CATEGORY = "Acima do peso ideal.";
+    private static final String OBESITY_CATEGORY = "Obeso.";
+
+    private static final String FEMALE = "F";
+    private static final String MASCULINE = "M";
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Sexo: [F / M]");
+        String sex = scanner.next();
 
         System.out.print("Peso: ");
         int weight = scanner.nextInt();
@@ -28,28 +34,23 @@ public class CalculatorIndexBodyMass {
         double height = scanner.nextDouble();
 
         double imc = weight / (height * height);
-        String category = calculateIMCCategory(imc);
+        String category = calculateIMCCategory(sex, imc);
 
         System.out.println(category);
         System.out.println("Fim do programa.");
     }
 
-    private static String calculateIMCCategory(double imc) {
-        if (imc < MIN_WEIGHT) {
-            return MIN_WEIGHT_CATEGORY;
+    private static String calculateIMCCategory(String sex, double imc) {
+        if (sex.equals(MASCULINE) && imc < UNDER_WEIGHT_M || sex.equals(FEMALE) && imc < UNDER_WEIGHT_F) {
+            return UNDER_WEIGHT_CATEGORY;
+        } else if (sex.equals(MASCULINE) && imc > UNDER_WEIGHT_M && imc <= IDEAL_WEIGHT_M || sex.equals(FEMALE) && imc >= UNDER_WEIGHT_F && imc <= IDEAL_WEIGHT_F) {
+            return IDEAL_WEIGHT_CATEGORY;
+        } else if (sex.equals(MASCULINE) && imc > IDEAL_WEIGHT_M && imc <= LITTLE_OVERWEIGHT_M || sex.equals(FEMALE) && imc > IDEAL_WEIGHT_F && imc <= LITTLE_OVERWEIGHT_F) {
+            return LITTLE_OVERWEIGHT_CATEGORY;
+        } else if (sex.equals(MASCULINE) && imc > LITTLE_OVERWEIGHT_M && imc <= ABOVE_IDEAL_WEIGHT_M || sex.equals(FEMALE) && imc > LITTLE_OVERWEIGHT_F && imc <= ABOVE_IDEAL_WEIGHT_F) {
+            return ABOVE_IDEAL_WEIGHT_CATEGORY;
+        } else {
+            return OBESITY_CATEGORY;
         }
-        if (imc < MAX_WEIGHT) {
-            return MAX_WEIGHT_CATEGORY;
-        }
-        if (imc < OVERWEIGHT_MAX) {
-            return OVERWEIGHT_CATEGORY;
-        }
-        if (imc < GRADE_I_OBESITY_MAX) {
-            return GRADE_I_OBESITY_CATEGORY;
-        }
-        if (imc < GRADE_II_OBESITY_MAX) {
-            return GRADE_II_OBESITY_CATEGORY;
-        }
-        return GRADE_III_OBESITY_CATEGORY;
     }
 }
