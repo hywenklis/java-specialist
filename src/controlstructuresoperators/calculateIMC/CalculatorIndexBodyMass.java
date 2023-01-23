@@ -1,11 +1,11 @@
-package fundamentalsoflanguage.calculateIMC;
+package controlstructuresoperators.calculateIMC;
 
-import fundamentalsoflanguage.calculateIMC.strategy.IMCCategoryStrategy;
-import fundamentalsoflanguage.calculateIMC.strategy.impl.*;
+import controlstructuresoperators.calculateIMC.strategy.IMCCategoryStrategy;
+import controlstructuresoperators.calculateIMC.strategy.impl.*;
 
 import java.util.Scanner;
 
-import static fundamentalsoflanguage.calculateIMC.utils.GenreCategory.IMC_WEIGHT_MAP;
+import static controlstructuresoperators.calculateIMC.utils.GenreCategory.IMC_WEIGHT_MAP;
 
 public class CalculatorIndexBodyMass {
 

@@ -1,4 +1,4 @@
-package fundamentalsoflanguage.calculateIMC.utils;
+package controlstructuresoperators.calculateIMC.utils;
 
 import java.util.HashMap;
 import java.util.Map;

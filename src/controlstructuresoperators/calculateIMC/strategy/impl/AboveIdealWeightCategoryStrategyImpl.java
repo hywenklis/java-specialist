@@ -1,6 +1,6 @@
-package fundamentalsoflanguage.calculateIMC.strategy.impl;
+package controlstructuresoperators.calculateIMC.strategy.impl;
 
-import fundamentalsoflanguage.calculateIMC.strategy.IMCCategoryStrategy;
+import controlstructuresoperators.calculateIMC.strategy.IMCCategoryStrategy;
 
 public class AboveIdealWeightCategoryStrategyImpl implements IMCCategoryStrategy {
 
