@@ -10,12 +10,13 @@ public class WhileLoop {
         int result = 0;
 
         while (result < 100) {
-            System.out.println("Digite um número inteiro: ");
+            System.out.println("Enter an integer: ");
             int number = input.nextInt();
 
             result += number;
         }
 
-        System.out.println("O resultado dos números é igual ou superior a 100!");
+        System.out.println("The result of the numbers is equal to or greater than 100!");
     }
 }
+
