@@ -19,7 +19,7 @@ public class LoanSimulator {
             default -> 3.99;
         };
 
-        double fixedFee = loanAmount >= 100 ? loanAmount + 1.50 : 0;
+        double fixedFee = loanAmount >= 100 ? 1.50 : 0;
         double totalInterest = loanAmount * (interestRate / 100 * numberOfInstallments);
         double totalCost = loanAmount + fixedFee + totalInterest;
 
