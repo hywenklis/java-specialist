@@ -8,7 +8,7 @@ public class WhileLoopIntermediate {
 
         Scanner input = new Scanner(System.in);
 
-        System.out.println("Digite um número inteiro: ");
+        System.out.println("Enter an integer: ");
         int number = input.nextInt();
         int invertedNumber = 0;
 
@@ -18,7 +18,8 @@ public class WhileLoopIntermediate {
             number /= 10;
         }
 
-        System.out.println("Números com dígitos invertidos: " + invertedNumber);
+        System.out.println("Number with inverted digits: " + invertedNumber);
     }
 }
+
 
