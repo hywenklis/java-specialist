@@ -1,4 +1,4 @@
-package ObjectOrientedProgramming.classs;
+package ObjectOrientedProgramming.Classs;
 
 public class Main {
 

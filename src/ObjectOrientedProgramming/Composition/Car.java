@@ -1,4 +1,4 @@
-package ObjectOrientedProgramming.classs;
+package ObjectOrientedProgramming.Composition;
 
 public class Car {
 
@@ -6,5 +6,5 @@ public class Car {
     String model;
     String color;
     int manufacturingYear;
-
+    Person owner;
 }
