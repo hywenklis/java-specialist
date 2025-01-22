@@ -6,7 +6,7 @@ Aqui estão organizados meus exercícios, divididos por tópicos, com explicaç�
 ## 📂 Estrutura do Repositório
 
 - [Control Structures and Operators](src/ControlStructuresOperators/README.md): Exercícios sobre estruturas de controle e operadores.
-- [Data Structures - Linked Simple List](src/DataStructure.LinkedSimpleList/README.md): Implementação de uma lista simplesmente ligada, com exemplos práticos.
+- [Data Structures - Linked Simple List](src/DataStructure/LinkedSimpleList/README.md): Implementação de uma lista simplesmente ligada, com exemplos práticos.
 
 ## 🚀 Objetivo
 
