@@ -6,11 +6,10 @@ Aqui estão organizados meus exercícios, divididos por tópicos, com explicaç�
 ## 📂 Estrutura do Repositório
 
 - [Control Structures and Operators](src/ControlStructuresOperators/README.md): Exercícios sobre estruturas de controle e operadores.
+- [Data Structures - Linked Simple List](src/DataStructure.LinkedSimpleList/README.md): Implementação de uma lista simplesmente ligada, com exemplos práticos.
 
 ## 🚀 Objetivo
 
 Este repositório tem como objetivo registrar meu progresso no aprendizado de Java, incluindo exercícios práticos, anotações e explicações dos conceitos abordados.
 
 ---
-
-**Autor**: [Seu Nome](https://github.com/hywenklis)
