@@ -1,6 +1,21 @@
 # Data Structures - Linked Simple List
 
-Esta seção contém uma implementação prática de uma **lista simplesmente ligada**. O objetivo é entender como funcionam as estruturas de dados dinâmicas em Java, explorando conceitos como nós, apontadores e manipulação de listas.
+Esta seção contém uma implementação prática de uma lista simplesmente ligada. O objetivo é entender como funcionam as estruturas de dados dinâmicas em Java, explorando conceitos como nós, apontadores e manipulação de listas.
+
+## 📚 O que é uma Lista Simplesmente Ligada?
+Uma lista simplesmente ligada (ou singly linked list) é uma estrutura de dados linear onde cada elemento (chamado de nó) contém:
+1. Um valor ou conteúdo.
+2. Um ponteiro ou referência para o próximo nó na lista.
+
+Características principais:
+- Dinâmica: Diferente de arrays, as listas encadeadas não possuem um tamanho fixo. Isso significa que você pode adicionar ou remover elementos conforme necessário, sem necessidade de redimensionar a estrutura.
+- Não sequencial em memória: Os nós não estão armazenados em locais contíguos de memória, mas conectados por meio de referências (ponteiros).
+- Operações eficientes: Inserções e exclusões são rápidas, desde que você tenha o nó correto para operar. Não é necessário deslocar elementos, como ocorre em arrays.
+
+Quando usar listas simplesmente ligadas?
+- Quando o tamanho dos dados varia frequentemente.
+- Para evitar problemas de redimensionamento que podem ocorrer ao usar arrays.
+- Quando as operações de inserção e remoção são mais frequentes do que as de acesso aleatório.
 
 ## 📘 Arquivos e Funções
 
