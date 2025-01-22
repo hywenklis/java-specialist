@@ -5,6 +5,7 @@ Aqui estão organizados meus exercícios, divididos por tópicos, com explicaç�
 
 ## 📂 Estrutura do Repositório
 
+- [Fundamentals of Language](src/FundamentalsOfLanguage): Exercicios práticos para ajudar a entender os fundamentos da linguagem
 - [Control Structures and Operators](src/ControlStructuresOperators/README.md): Exercícios sobre estruturas de controle e operadores.
 - [Data Structures - Linked Simple List](src/DataStructure/LinkedSimpleList/README.md): Implementação de uma lista simplesmente ligada, com exemplos práticos.
 
