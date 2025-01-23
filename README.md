@@ -7,6 +7,7 @@ Aqui estão organizados meus exercícios, divididos por tópicos, com explicaç�
 
 - [Fundamentals of Language](src/FundamentalsOfLanguage): Exercicios práticos para ajudar a entender os fundamentos da linguagem
 - [Control Structures and Operators](src/ControlStructuresOperators/README.md): Exercícios sobre estruturas de controle e operadores.
+- [Object-Oriented Programming (OOP)](src/ObjectOrientedProgramming): Exercicios práticos para ajudar a entender a programação orientada a objeto
 - [Data Structures - Linked Simple List](src/DataStructure/LinkedSimpleList/README.md): Implementação de uma lista simplesmente ligada, com exemplos práticos.
 
 ## 🚀 Objetivo
