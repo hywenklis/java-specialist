@@ -4,7 +4,7 @@ A pasta **`StructuresControlAndOperators`** contém exemplos práticos dos princ
 
 ## 📘 Estrutura e Conceitos
 
-### [Break e Continue](StructuresControlAndOperators/BreakAndContinueStatements)
+### [Break e Continue](/BreakAndContinueStatements)
 Essas instruções permitem alterar o fluxo de execução de laços de repetição.
 - **`break`** interrompe completamente um loop.
 - **`continue`** pula para a próxima iteração do loop, ignorando o código subsequente na iteração atual.
