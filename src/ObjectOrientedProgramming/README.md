@@ -1,13 +1,20 @@
 # Object-Oriented Programming (OOP)
 
-A pasta **`ObjectOrientedProgramming`** contém exemplos práticos para explorar os conceitos fundamentais de programação orientada a objetos (POO) em Java, como classes, composição, criação de objetos e acesso a atributos. POO é um paradigma de programação que organiza o código em torno de "objetos"—instâncias de classes que encapsulam dados e comportamentos relacionados. Essa abordagem oferece benefícios como maior modularidade, reutilização de código e facilidade na manutenção de aplicações complexas, tornando-a amplamente adotada na indústria.
+A pasta **`ObjectOrientedProgramming`** contém exemplos práticos para explorar os conceitos fundamentais de programação
+orientada a objetos (POO) em Java, como classes, composição, criação de objetos e acesso a atributos. POO é um paradigma
+de programação que organiza o código em torno de "objetos"—instâncias de classes que encapsulam dados e comportamentos
+relacionados. Essa abordagem oferece benefícios como maior modularidade, reutilização de código e facilidade na
+manutenção de aplicações complexas, tornando-a amplamente adotada na indústria.
 
 ---
 
 ## 📘 Estrutura e Conceitos
 
 1. **[Classs](Classs)**
-    - Apresenta como criar e instanciar classes e objetos em Java, explicando o papel central de classes como modelos para objetos e de objetos como instâncias que encapsulam dados e comportamentos. Inclui conceitos como encapsulamento, que protege os dados internos de acesso direto, e abstração, que simplifica a complexidade ao expor apenas os detalhes essenciais.
+    - Apresenta como criar e instanciar classes e objetos em Java, explicando o papel central de classes como modelos
+      para objetos e de objetos como instâncias que encapsulam dados e comportamentos. Inclui conceitos como
+      encapsulamento, que protege os dados internos de acesso direto, e abstração, que simplifica a complexidade ao
+      expor apenas os detalhes essenciais.
 
    **Arquivos:**
     - `Car.java`
@@ -29,7 +36,10 @@ A pasta **`ObjectOrientedProgramming`** contém exemplos práticos para explorar
 ---
 
 2. **[Composition](Composition)**
-    - Introduz o conceito de composição, onde uma classe pode conter outras classes como parte de sua estrutura. Por exemplo, no mundo real, um 'Carro' pode ser composto por um 'Motor', ilustrando como objetos podem ser utilizados como atributos de outros objetos para representar relações "tem-um". Esse conceito é essencial para criar sistemas modulares e reutilizáveis.
+    - Introduz o conceito de composição, onde uma classe pode conter outras classes como parte de sua estrutura. Por
+      exemplo, no mundo real, um 'Carro' pode ser composto por um 'Motor', ilustrando como objetos podem ser utilizados
+      como atributos de outros objetos para representar relações "tem-um". Esse conceito é essencial para criar sistemas
+      modulares e reutilizáveis.
 
    **Arquivos:**
     - `Car.java`
@@ -54,7 +64,9 @@ A pasta **`ObjectOrientedProgramming`** contém exemplos práticos para explorar
 ---
 
 3. **[InstantiatingObjectsAccessingAttributes](challenge/InstantiatingObjectsAccessingAttributes)**
-    - Explora como instanciar múltiplos objetos e acessar seus atributos, abordando a diferença entre instâncias únicas e múltiplas. Discute também o impacto no gerenciamento de memória ao criar diversas instâncias, destacando como essa prática pode influenciar o desempenho e a eficiência do programa.
+    - Explora como instanciar múltiplos objetos e acessar seus atributos, abordando a diferença entre instâncias únicas
+      e múltiplas. Discute também o impacto no gerenciamento de memória ao criar diversas instâncias, destacando como
+      essa prática pode influenciar o desempenho e a eficiência do programa.
 
    **Arquivos:**
     - `Dog.java`
@@ -71,4 +83,5 @@ A pasta **`ObjectOrientedProgramming`** contém exemplos práticos para explorar
    dog1.age = 3;
    System.out.println("Dog Name: " + dog1.name + ", Age: " + dog1.age);
    ```
+
 ---

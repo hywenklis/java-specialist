@@ -1,6 +1,7 @@
 # Control Structures and Operators
 
-Esta seção contém exercícios e exemplos práticos sobre estruturas de controle e operadores no Java. Aqui estão explorados conceitos como:
+Esta seção contém exercícios e exemplos práticos sobre estruturas de controle e operadores no Java. Aqui estão
+explorados conceitos como:
 
 - Operadores de comparação e igualdade
 - Estruturas de decisão (`if`, `else if`, `else`)
