@@ -1,4 +1,4 @@
-package Generics.UsingGenerics;
+package Generics.UsingExample;
 
 public class ListWithoutGenerics {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package Generics.UsingGenerics;
+package Generics.UsingExample;
 
 import java.util.ArrayList;
 

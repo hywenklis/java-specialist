@@ -1,4 +1,4 @@
-package Generics.MethodGenerics;
+package Generics.Method;
 
 public class ArrayUtilsWithoutGenerics {
     public static <T> T getElement(T[] array, int i) {
