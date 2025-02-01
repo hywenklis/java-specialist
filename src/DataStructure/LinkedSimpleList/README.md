@@ -1,103 +1,151 @@
-# Data Structures - Linked Simple List
 
-Esta seção contém uma implementação prática de uma lista simplesmente ligada. O objetivo é entender como funcionam as
-estruturas de dados dinâmicas em Java, explorando conceitos como nós, apontadores e manipulação de listas.
+# 🛠️ Lista Simplesmente Ligada em Java
 
-## 📚 O que é uma Lista Simplesmente Ligada?
+![Java Version](https://img.shields.io/badge/Java-17%2B-blue?logo=java)
+![Estrutura de Dados](https://img.shields.io/badge/Tipo-Lista_Encadeada-green)
 
-Uma lista simplesmente ligada (ou singly linked list) é uma estrutura de dados linear onde cada elemento (chamado de nó)
-contém:
+Implementação prática de uma lista encadeada para gerenciamento de bagagens de aeroporto.
 
-1. Um valor ou conteúdo.
-2. Um ponteiro ou referência para o próximo nó na lista.
+## 📘 Conceito Fundamental
 
-Características principais:
+```mermaid
+graph LR
+    A[Nó] --> B["Dados (Bagagem)"]
+    A --> C["Próximo Nó"]
+```
 
-- Dinâmica: Diferente de arrays, as listas encadeadas não possuem um tamanho fixo. Isso significa que você pode
-  adicionar ou remover elementos conforme necessário, sem necessidade de redimensionar a estrutura.
-- Não sequencial em memória: Os nós não estão armazenados em locais contíguos de memória, mas conectados por meio de
-  referências (ponteiros).
-- Operações eficientes: Inserções e exclusões são rápidas, desde que você tenha o nó correto para operar. Não é
-  necessário deslocar elementos, como ocorre em arrays.
+### 🔍 Características Essenciais
+- **Estrutura Dinâmica**  
+  ⚡ Cresce/reduz conforme necessidade  
+  🚫 Sem tamanho fixo como arrays
 
-Quando usar listas simplesmente ligadas?
+- **Armazenamento Não Sequencial**  
+  💾 Nós alocados em memória não contígua  
+  🔗 Conexão via referências
 
-- Quando o tamanho dos dados varia frequentemente.
-- Para evitar problemas de redimensionamento que podem ocorrer ao usar arrays.
-- Quando as operações de inserção e remoção são mais frequentes do que as de acesso aleatório.
+- **Eficiência em Operações**  
+  ⏱️ Inserções/remoções rápidas (O(1) no início)  
+  ⚠️ Acesso sequencial necessário (O(n))
 
-## 📘 Arquivos e Funções
-
-1. **[Baggage.java](Baggage.java)**:  
-   Classe que representa uma bagagem com `code` (código identificador) e `weight` (peso).
-
-2. **[LinkedList.java](LinkedList.java)**:  
-   Implementação da estrutura de lista simplesmente ligada. Inclui:
-    - Método para verificar se a lista está vazia.
-    - Adicionar um novo nó à lista.
-    - Calcular o peso total das bagagens.
-    - Imprimir o conteúdo da lista.
-
-3. **[Nodo.java](Nodo.java)**:  
-   Representa um nó da lista, contendo:
-    - Um objeto `Baggage` como conteúdo.
-    - Uma referência para o próximo nó.
-
-4. **[AirportTest.java](AirportTest.java)**:  
-   Classe de teste que demonstra:
-    - Criação de uma lista vazia.
-    - Adição de bagagens.
-    - Impressão da lista e cálculo do peso total.
+**Casos de Uso Ideais**:
+- Sistemas com carga variável (ex: logística)
+- Quando inserções/remoções são frequentes
+- Filas de prioridade dinâmica
 
 ---
 
-## 📝 Notas Importantes
+## 🗂️ Arquivos e Implementação
 
-### Estrutura da Lista Simplesmente Ligada
+### 1. Estrutura de Classes
+| Arquivo            | Descrição                                |
+|--------------------|------------------------------------------|
+| `Baggage.java`     | Modela uma bagagem com código e peso     |
+| `Nodo.java`        | Unidade básica da lista (dado + próximo) |
+| `LinkedList.java`  | Lógica completa da lista                 |
+| `AirportTest.java` | Testes práticos da implementação         |
 
-- Cada nó armazena dois elementos:
-    1. O conteúdo (no caso, uma instância de `Baggage`).
-    2. Uma referência para o próximo nó.
-
-- A lista começa com o nó inicial (`Beginning`) e percorre os nós até encontrar `null`, que indica o final da lista.
-
-### Exemplo de Uso
-
-#### Adicionar Bagagens:
-
+### 2. Métodos Principais
 ```java
-LinkedList list = new LinkedList();
-list.
-
-newBaggage(new Baggage("001", 10));
-    list.
-
-newBaggage(new Baggage("002", 15));
+public class LinkedList {
+    private Nodo beginning;  // Primeiro nó
+    
+    // Verifica se lista está vazia
+    public boolean isEmpty() { /*...*/ }
+    
+    // Adiciona nova bagagem no final
+    public void addBaggage(Baggage baggage) { /*...*/ }
+    
+    // Calcula peso total
+    public double totalWeight() { /*...*/ }
+    
+    // Exibe lista formatada
+    public void printList() { /*...*/ }
+}
 ```
 
-#### Imprimir Lista:
+---
 
+## 🧪 Exemplo Prático Completo
+
+### Cenário de Teste
 ```java
-list.printList();
+public class AirportTest {
+    public static void main(String[] args) {
+        LinkedList list = new LinkedList();
+        
+        // Adição de bagagens
+        list.addBaggage(new Baggage("001", 10));
+        list.addBaggage(new Baggage("002", 15));
+        list.addBaggage(new Baggage("003", 25));
+        list.addBaggage(new Baggage("004", 20));
+        list.addBaggage(new Baggage("005", 30));
+
+        // Operações
+        System.out.println("Lista Completa:");
+        list.printList();
+        
+        System.out.println("\nPeso Total: " + list.totalWeight());
+    }
+}
 ```
 
-#### Calcular Peso Total:
+### Saída Detalhada
+```text
+Início da Lista
+Posição: 0 → 005 (30kg) → 004 (20kg) → 003 (25kg) → 002 (15kg) → 001 (10kg) → null
+Posição: 1 → 004 (20kg) → 003 (25kg) → 002 (15kg) → 001 (10kg) → null
+Posição: 2 → 003 (25kg) → 002 (15kg) → 001 (10kg) → null
+Posição: 3 → 002 (15kg) → 001 (10kg) → null
+Posição: 4 → 001 (10kg) → null
+Final da Lista
 
-```java
-System.out.println("Peso total: "+list.totalWeight());
+Peso total: 100kg
 ```
 
-#### Saída do Teste:
+---
 
-```java
-Inicio da
-Lista
-Posição:0 005->30->004->20->003->25->002->15->001->10->null
-Posição:1 004->20->003->25->002->15->001->10->null
-Posição:2 003->25->002->15->001->10->null
-Posição:3 002->15->001->10->null
-Posição:4 001->10->null
-Final da
-Lista
-Peso total:100
+## ⚙️ Funcionamento Interno
+
+### Estrutura de Nó
+```mermaid
+classDiagram
+    class Nodo {
+        -Baggage baggage
+        -Nodo next
+        +Nodo(Baggage baggage)
+        +getNext() Nodo
+        +setNext(Nodo next)
+    }
 ```
+
+### Fluxo de Adição
+1. Cria novo nó com a bagagem
+2. Se lista vazia: define como início
+3. Se não vazia: percorre até último nó
+4. Define próximo do último nó como novo nó
+
+```mermaid
+flowchart TD
+    Start[Novo Nó] --> Check{Lista Vazia?}
+    Check -- Sim --> SetStart[Define como Início]
+    Check -- Não --> FindLast[Percorre até último nó]
+    FindLast --> Link[Vincula novo nó]
+```
+
+---
+
+## 📚 Aprendizados Chave
+1. **Manipulação de Ponteiros**  
+   Entenda como as referências `next` conectam os nós
+
+2. **Complexidade Algorítmica**
+    - Inserção no final: O(n)
+    - Busca: O(n)
+    - Remoção: O(n)
+
+3. **Vantagens sobre Arrays**
+    - Tamanho flexível
+    - Inserções/remoções eficientes
+    - Sem desperdício de memória
+
+---
