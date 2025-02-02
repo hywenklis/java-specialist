@@ -7,7 +7,7 @@ pode significar a diferença entre um sistema ultrarrápido 🚀 e uma aplicaç�
 
 - [LinkedList](/src/DataStructure/LinkedSimpleList/README.md): Conceitos sobre lista encandeadas
 - [Queue](/src/DataStructure/Queue/README.md): Conceitos sobre filas
-
+- [HashMap](/src/DataStructure/HashMap/README.md): Conceitos sobre HashMap
 
 ---
 
