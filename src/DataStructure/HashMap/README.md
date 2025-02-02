@@ -17,7 +17,7 @@ Um HashMap funciona como um **catálogo musical digital**:
 - **Busca Instantânea**: Encontre qualquer música em tempo constante ⚡
 - **Armazenamento Dinâmico**: Expande automaticamente conforme novas músicas são adicionadas
 
-Exemplo de Código: "[MusicStreamingService](/DataStructure/HashMap/MusicStreamingService.java)"
+Exemplo de Código: "[MusicStreamingService](/src/DataStructure/HashMap/MusicStreamingService.java)"
 
 Saída Esperada:
 ```text
