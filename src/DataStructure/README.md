@@ -5,6 +5,10 @@
 As Collections são **ferramentas fundamentais** para manipulação eficiente de dados em Java. Escolher a estrutura certa
 pode significar a diferença entre um sistema ultrarrápido 🚀 e uma aplicação lenta 🐢!
 
+- [LinkedList](/DataStructure/LinkedSimpleList/README.md): Conceitos sobre lista encandeadas
+- [Queue](/DataStructure/Queue/README.md): Conceitos sobre filas
+
+
 ---
 
 ## 🎓 Conceitos Chave
